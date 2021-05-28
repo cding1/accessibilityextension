@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
-    <title>DIRECTION Admin Tickets</title>
+    <title>DIRECTION Admin Login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
 
     <style>
         html, body{
@@ -36,33 +34,6 @@
         img{
             width: 50px;
         }
-
-        .modal-header{
-            align-items: center;
-            border-bottom:0.5px solid;
-        }
-
-        .modal-content-rating{
-            padding: 0 22px;
-        }
-
-        .modal-content-upload{
-            padding: 0 22px;
-        }
-
-        .modal-content-feedback{
-            padding: 0 22px;
-        }
-
-        .modal-content-submit{
-            padding: 0 22px;
-        }
-
-        .modal-icons {
-            border-top: 0.5px solid;
-            height: 50px;
-            width: 100%;
-        }
         
         .logo{
             padding: 16px;
@@ -74,7 +45,32 @@
             margin-right: 12px;
         }
 
-        p.outset {border-style: outset;}
+        .modal-header{
+            align-items: center;
+            border-bottom:0.5px solid;
+        }
+
+        .username{
+          margin-top: 10px;
+          margin-left: 50px;
+          margin-right: 30px;
+        }
+
+        .password{
+          margin-left: 20px;
+        }
+
+        .loginbutton{
+          margin-left: 100px;
+          margin-top:10px;
+          background-color: white;
+        }
+
+        .cancelbutton{
+          margin-top:10px;
+          background-color: white;
+        }
+
     </style>
 
 </head>
@@ -82,40 +78,39 @@
 <!-- heading -->
  <div class="modal-header">
      <h1 class="logo">
-         <a href = "popup.html">
+        <a href = "popup.html">
          <img src="images/icon_150.png" alt="Feedback Area" class="logo-icon"> 
-         </a>   
-
-         <b>admin tickets</b>
-
-         <a href = "tickethistory.html">
-            <button class= "mainbutton"><i class = "material-icons">&#xe889;</i></button>
         </a>
-
-
+        
+        <b>admin login</b>
      </h1>
  </div>
 
- <p> Welcome back! You have 1 pending ticket.</p>
 
-<div class = "container">
+ <form action="adminticket.html" method="post">
 
-    <p class="outset">
-        <blockquote>
-        Ticket: #2 <br />
-        Email: clara@test.com.au <br /> 
-        Score: 8/10 <br />
-        Issue: red-green colour blindness <br />
-        Feedback: pictures are blurry, needs more colour contrast <br />
-        </blockquote>
+  <div class="username">
+    <label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+  </div>
 
-</p>
-    
-</div>
+  <div class = "password">
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+  </div>
 
 
- <script src="popup.js"></script>
+</form>
+<a href = "adminticket.html">
+<button class="loginbutton">Login</button>
+</a>
+  <a href = "popup.html">
+  <button class="cancelbutton">Cancel</button>
+</a>
+
+ <script src="adminlogin.js"></script>
 
 
 </body>
 </html>
+

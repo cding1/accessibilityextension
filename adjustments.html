@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
-    <title>DIRECTION Admin Tickets</title>
+    <title>DIRECTION Feedback Area</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
 
     <style>
         html, body{
@@ -42,27 +40,7 @@
             border-bottom:0.5px solid;
         }
 
-        .modal-content-rating{
-            padding: 0 22px;
-        }
-
-        .modal-content-upload{
-            padding: 0 22px;
-        }
-
-        .modal-content-feedback{
-            padding: 0 22px;
-        }
-
-        .modal-content-submit{
-            padding: 0 22px;
-        }
-
-        .modal-icons {
-            border-top: 0.5px solid;
-            height: 50px;
-            width: 100%;
-        }
+       
         
         .logo{
             padding: 16px;
@@ -74,7 +52,44 @@
             margin-right: 12px;
         }
 
-        p.outset {border-style: outset;}
+        .slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
     </style>
 
 </head>
@@ -82,38 +97,13 @@
 <!-- heading -->
  <div class="modal-header">
      <h1 class="logo">
-         <a href = "popup.html">
-         <img src="images/icon_150.png" alt="Feedback Area" class="logo-icon"> 
-         </a>   
-
-         <b>admin tickets</b>
-
-         <a href = "tickethistory.html">
-            <button class= "mainbutton"><i class = "material-icons">&#xe889;</i></button>
-        </a>
-
-
-     </h1>
+         <img src="images/icon_150.png" alt="Feedback Area" class="logo-icon"> adjustments
  </div>
 
- <p> Welcome back! You have 1 pending ticket.</p>
-
-<div class = "container">
-
-    <p class="outset">
-        <blockquote>
-        Ticket: #2 <br />
-        Email: clara@test.com.au <br /> 
-        Score: 8/10 <br />
-        Issue: red-green colour blindness <br />
-        Feedback: pictures are blurry, needs more colour contrast <br />
-        </blockquote>
-
-</p>
-    
-</div>
-
-
+ <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  </div>
+  
  <script src="popup.js"></script>
 
 

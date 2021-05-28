@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang= "en">
+<body style= "background-color:#205493"></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
+    <title>DIRECTION Feedback Area</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html, body{
+            font-family: 'Open Sans', sans-serif;
+            color:white;
+            font-size: 15px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+        }
+
+        h1{
+            font-family: 'Open Sans', monospace;
+            color: white;
+            font-size: 28px;
+            font-weight: 400p;
+            margin: 0;
+            
+        }
+
+        img{
+            width: 50px;
+        }
+
+        .modal-header{
+            align-items: center;
+            border-bottom:0.5px solid;
+        }
+
+        .modal-content-rating{
+            padding: 0 22px;
+        }
+
+        .modal-content-upload{
+            padding: 0 22px;
+        }
+
+        .modal-content-feedback{
+            padding: 0 22px;
+        }
+
+        .modal-content-submit{
+            margin-top: 10px;
+            padding: 0 22px;
+        }
+
+        .modal-icons {
+            border-top: 0.5px solid;
+            height: 50px;
+            width: 100%;
+        }
+        
+        .logo{
+            padding: 16px;
+        
+        }
+
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .button{
+            background-color: white;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 10px 8px;
+        }
+
+        button:focus{
+            background: #205493;
+            color: white;
+        }
+        
+        label{
+            display: block;
+            color: white;
+            margin: 0 0 4px;
+        }
+
+        input{
+            border: black;
+            padding: 10px 10px;
+            font-size: 14px;
+            width: 80%;
+        }
+
+        .mainbutton{
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .username{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+<!-- heading -->
+ <div class="modal-header">
+        <h1 class="logo">
+        <a href = "popup.html">
+            <img src="images/icon_150.png" alt="Feedback Area" class="logo-icon"> 
+        </a>
+
+        <b>feedback area</b>
+
+        <a href = "adminlogin.html">
+            <button class= "mainbutton"><i class = "material-icons">&#xe7fd;</i></button>
+        </a>
+
+        <a href = "adjustments.html">
+            <button class= "mainbutton"><i class = "material-icons">&#xe8b8;</i></button>
+        </a> 
+     </h1>
+ </div>
+
+ <div class="username">
+    <label for="uname">Email (optional)</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+  </div>
+
+  <div class="username">
+    <label for="accessibilityissue">Accessibility Issue (optional)</label>
+    <input type="text" placeholder="Enter Text" name="text" required>
+  </div>
+
+
+<!-- score rating -->
+ <div class="modal-content-rating">
+     <p>How would you rate this website's accessiblity?</p>
+     <button class="button">1</button>
+     <button class="button">2</button>
+     <button class="button">3</button>
+     <button class="button">4</button>
+     <button class="button">5</button>
+     <button class="button">6</button>
+     <button class="button">7</button>
+     <button class="button">8</button>
+     <button class="button">9</button>
+     <button class="button">10</button>
+ </div>
+
+
+ <div class="modal-content-upload">
+     <p>Please upload screenshot of the issue (optional)</p>
+     <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+      </form>
+ </div>
+
+ <div class="modal-content-feedback">
+    <p>Additional Feedback (optional)</p>
+    <input id="text1" placeholder="Please input any additional feedback you may have">
+    <br>
+</div>
+
+<div class="modal-content-submit">
+    <a href = "thankyou.html">
+    <button class="button">Submit</button>
+</a>
+</div>
+
+ <script src="popup.js"></script>
+
+
+</body>
+</html>
