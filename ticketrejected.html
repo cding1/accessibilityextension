@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang= "en">
+<body style= "background-color:#205493"></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
+    <title>DIRECTION Feedback Area</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html, body{
+            font-family: 'Open Sans', sans-serif;
+            color:white;
+            font-size: 15px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+        }
+
+        h1{
+            font-family: 'Open Sans', monospace;
+            color: white;
+            font-size: 30px;
+            font-weight: 400p;
+            margin: 0;
+            
+        }
+
+        img{
+            width: 50px;
+        }
+
+        .modal-header{
+            align-items: center;
+            border-bottom:0.5px solid;
+        }
+
+        .logo{
+            padding: 16px;
+        }
+
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .button{
+          margin-left: 100px;
+          margin-top:10px;
+          background-color: white;
+        }
+
+        button:focus{
+            background: #205493;
+        }
+
+        .ticket-container{
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- heading, icon links back to home page -->
+<div class="modal-header">
+    <h1 class="logo">
+        <a href = "popup.html">
+            <img src="images/icon_150.png" alt="Feedback Area" class="logo-icon"> 
+        </a>
+    <b>ticket rejected</b>
+</div>
+
+<!--ticket-->
+<div class = "ticket-container">
+    <p>Ticket has been rejected. Email will be sent to the user if provided.</p>
+    <label for="accessibilityissue">Comments (optional) </label>
+        <textarea rows="10" cols="43" placeholder="Please input any comments for future reference."></textarea>
+</div>
+
+<!--done button-->
+<a href = "adminticket.html">
+    <button class="button">Done</button>
+</a>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang= "en">
+<body style= "background-color:#205493"></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
+    <title>DIRECTION Admin Tickets</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+
+    <style>
+        html, body{
+            font-family: 'Open Sans', sans-serif;
+            color:white;
+            font-size: 15px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+        }
+
+        h1{
+            font-family: 'Open Sans', monospace;
+            color: white;
+            font-size: 30px;
+            font-weight: 400p;
+            margin: 0;
+            
+        }
+
+        img{
+            width: 50px;
+        }
+
+        .modal-header{
+            align-items: center;
+            border-bottom:0.5px solid;
+        }
+        
+        .logo{
+            padding: 16px;
+        
+        }
+
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        p.outset {border-style: outset;}
+
+        .ticket-container{
+            margin-left: 30px;
+            background-color: white;
+            font-size: 10px;
+            color:#205493;
+            border: 5px solid white;
+            width: 300px;
+            height: 150px;
+        }
+
+        .welcome-text{
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        .p{
+            font-size: 10px;
+        }
+
+        .tickbutton{
+            margin-left: 50px;
+           
+        }
+
+        .crossbutton{
+            margin-left: 30px;
+        }
+
+        .move{
+            display: flex;
+        }
+
+        .mainbutton{
+            background-color: white;
+            font-size: 20px;
+            cursor: pointer;
+            
+        }
+
+        button:focus{
+            background: #205493;
+            color: white;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+<!-- heading, icon links back to homepage -->
+<div class="modal-header">
+    <h1 class="logo">
+        <a href = "popup.html">
+            <img src="images/icon_150.png" alt="Feedback Area" class="logo-icon"> 
+        </a>   
+        <b>ticket history</b>
+        <a href = "adminticket.html">
+            <button class= "mainbutton"><i class = "material-icons">&#xe5c4;</i></button>
+        </a>
+    </h1>
+</div>
+
+<!--welcome text-->
+<div class = "welcome-text">
+    <p> You have completed 1 ticket.</p>
+</div>
+
+<!--past tickets-->
+<div class = "ticket-container">
+    <blockquote class = "p">
+        <b>Ticket:</b> #1 <br />
+        <b>Email:</b> test@test.com.au <br /> 
+        <b>Score:</b> 6/10 <br />
+        <b>Issue: </b> myopia <br />
+        <b>Feedback: </b>the font on the home page needs to be more clear <br />
+        <b>Image:</b>picture.docx <br />
+        <b>Status:</b>Resolved<br />
+    </blockquote>
+</div>
+
+</body>
+</html>

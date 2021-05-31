@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang= "en">
+<body style= "background-color:#205493"></body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv= "X-UA-Compatible" content= "ie=edge">
+    <title>DIRECTION Adjustments</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html, body{
+            font-family: 'Open Sans', sans-serif;
+            color:white;
+            font-size: 15px;
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+        }
+
+        h1{
+            font-family: 'Open Sans', monospace;
+            color: white;
+            font-size: 30px;
+            font-weight: 400p;
+            margin: 0;
+        }
+
+        img{
+            width: 50px;
+        }
+
+        .modal-header{
+            align-items: center;
+            border-bottom:0.5px solid;
+        }
+
+        .logo{
+            padding: 16px;
+        
+        }
+
+        .logo-icon{
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .slider-container {
+        width: 50%; 
+        margin-left: 20px;
+        }
+
+
+          .slider {
+            -webkit-appearance: none;  
+            appearance: none;
+            width: 100%; 
+            height: 15px; 
+            background: white; 
+            outline: none; 
+            opacity: 0.7; 
+            -webkit-transition: .2s; 
+            transition: opacity .2s;
+          }
+
+
+            .slider:hover {
+              opacity: 2; 
+            }
+
+
+            .slider::-webkit-slider-thumb {
+              -webkit-appearance: none; 
+              appearance: none;
+              width: 15px; 
+              height: 15px; 
+              background: #205493;
+              cursor: pointer; 
+            }
+
+            .slider::-moz-range-thumb {
+              width: 15px; 
+              height: 15px; 
+              background: #205493; 
+              cursor: pointer; 
+            }
+
+        .dictation-container{
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+
+        .readbutton{
+        margin-left: 100px;
+          background: white;
+          cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+ 
+  <!--heading, click on logo image to loop back to feedback area-->
+  <div class="modal-header">
+   <a href = "popup.html">
+     <h1 class="logo">
+         <img src="images/icon_150.png" alt="Feedback Area" class="logo-icon">
+   </a>
+    <b>adjustments</b>
+  </div>
+
+  <!--colour spectrum sliders-->
+  <div class="slider-container">
+
+   </br><b>Colour Spectrum</b>
+    
+   <p>Red-Green</p>
+    <input type="range" min="1" max="100" value="50" class = "slider">
+
+   <p>Blue-Yellow</p>
+    <input type="range" min="1" max="100" value="50" class = "slider">
+
+   <p>Greyscale</p>
+    <input type="range" min="1" max="100" value="50" class = "slider">
+
+  </div>
+
+  <!--dictation textbox and button-->
+  <div class = "dictation-container">
+  
+   <b>Dictation</b> </br>
+
+   <textarea rows="5" cols="30" placeholder="Enter dictation here"></textarea>
+
+  </div>
+
+  <!--read button-->
+  <button class="readbutton">Read</button>
+
+</body>
+</html>
